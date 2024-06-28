@@ -1,0 +1,101 @@
+#grilla_galeria{
+	display: grid;
+	grid-template-areas: 
+	"cabeza cabeza cabeza cabeza"
+	"img1 img2 img3 img4"
+	"img5 img5 img5 img5"
+	"video1 video1 video2 video2";
+	grid-template-rows: 50px 200px 900px 350px;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 20px 20px 0px 20px;
+	grid-gap: 10px;
+}
+
+.texto_cabeza{
+	grid-area: cabeza;
+	justify-self: center;
+}
+.img1{
+	grid-area: img1;
+}
+.img2{
+	grid-area: img2;
+}
+.img3{
+	grid-area: img3;
+}
+.img4{
+	grid-area: img4;
+}
+.img5{
+	grid-area: img5;
+}
+.video1{
+	grid-area: video1;
+}
+.video2{
+	grid-area: video2;
+}
+.video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.img0{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+	#grilla_galeria{
+	display: grid;
+	grid-template-areas: 
+	"cabeza cabeza"
+	"img1 img2" 
+	"img3 img4"
+	"img5 img5"
+	"video1 video1"
+	"video2 video2";
+	grid-template-rows: 50px 300px 300px 800px 400px 400px;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 20px 20px 0px 20px;
+	grid-gap: 10px;
+}
+}
+@media (max-width: 767px) {
+  #grilla_galeria{
+	display: grid;
+	grid-template-areas: 
+	"cabeza"
+	"img1" 
+	"img2" 
+	"img3" 
+	"img4"
+	"img5" 
+	"video1"
+	"video2";
+	grid-template-rows: 50px 350px 350px 350px 350px 500px 400px 400px;
+	grid-template-columns: 1fr;
+	margin: 20px 16px 0px 16px;
+	grid-gap: 5px;
+}
+}
+@media (max-width: 640px) {
+  #grilla_galeria{
+	display: grid;
+	grid-template-areas: 
+	"cabeza"
+	"img1" 
+	"img2" 
+	"img3" 
+	"img4"
+	"img5" 
+	"video1"
+	"video2";
+	grid-template-rows: 50px 300px 250px 250px 250px 300px 200px 200px;
+	grid-template-columns: 1fr;
+	margin: 20px 16px 0px 16px;
+	grid-gap: 5px;
+}
+}

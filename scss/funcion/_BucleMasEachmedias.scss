@@ -1,0 +1,6 @@
+@import "../Variables";
+@each $numeroitem, $valororder in $map{
+    .i#{$numeroitem}{
+        order: $valororder;
+    }
+}

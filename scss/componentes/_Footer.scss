@@ -1,0 +1,15 @@
+@import "../mixins/Mixins";
+body{
+    footer{
+        @include flex-row-center;
+        margin: 20px 16px 20px 16px;
+        .imagen_pie{
+            height: 50px;
+            width: 160px;
+            margin: 0px 100px 0px 0px;
+            .redes{
+                height: 100%;
+            }
+        }
+    }
+}

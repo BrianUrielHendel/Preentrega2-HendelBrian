@@ -1,0 +1,55 @@
+@import "../mixins/Mixins";
+@media (max-width: 1023px) {
+	@import "../funcion/BucleMasEachmedias";
+	body{
+    	nav{
+    		#barra_nav{
+        		@include flex-row-center;
+       		}
+       	}
+    }
+}
+@media (max-width: 767px) {
+	body {
+		nav{
+			font-weight: 500;
+			font-size: 12px;
+			header{
+				margin: 16px 20px 0px 16px;
+				text-align: center;
+			}
+			#barra_nav{
+				margin: 0px 16px 0px 16px;
+				a{
+					width:100%;
+				}
+			}
+		}
+		main{
+			#caja_info{
+				flex-wrap: wrap;
+				margin: 20px 16px 0px 16px;
+				.tex_info{
+					order: 1;
+					margin: 0px 0px 10px 0px;
+					font-size: 12px;
+				}
+				.imagen_info{
+				  order: 2;
+			   } 
+		   }
+		}
+  		footer{
+	 		margin: 20px 16px 20px 16px;
+	    	align-items: center;
+	    	.imagen_pie{
+				height: 30px;
+				width: 160px;
+				margin: 0px 50px 0px 0px;
+			}
+			.piepag{
+				font-size: 10px;
+			}
+ 		}
+	}  
+}

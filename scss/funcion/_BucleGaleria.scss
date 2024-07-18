@@ -1,0 +1,6 @@
+@import "../Variables";
+@for $itemorder from 5 through 1{
+    .img#{$itemorder}{
+        grid-area: img+$itemorder;
+    }
+}

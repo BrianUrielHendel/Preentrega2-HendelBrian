@@ -1,0 +1,43 @@
+body{
+    main{
+        #grilla_galeria{
+            display: grid;
+            grid-template-areas: 
+            "cabeza cabeza cabeza cabeza"
+            "img1 img2 img3 img4"
+            "img5 img5 img5 img5"
+            "video1 video1 video2 video2";
+            grid-template-rows: 50px 200px 900px 350px;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 20px 20px 0px 20px;
+            grid-gap: 10px;
+            .texto_cabeza{
+                grid-area: cabeza;
+                justify-self: center;
+                .titulo_pagina{
+                    font-weight: 300;
+                    font-size: 40px;
+                    margin: 0px;
+                }
+            }
+            @import "../funcion/BucleGaleria";
+            .video1{
+                grid-area: video1;
+            }
+            .video2{
+                grid-area: video2;
+            }
+            .video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .img0{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        
+        }
+    }
+}

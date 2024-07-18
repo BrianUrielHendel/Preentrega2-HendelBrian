@@ -1,0 +1,15 @@
+body{
+    main{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px 0px 20px;
+            .texto_cabeza_d{
+                text-align: center;
+                .titulo_pagina_discografia{
+                    font-weight: 300;
+                    font-size: 40px;
+                    margin: 20px 0px 0px 0px;
+                }
+            }
+    }
+} 

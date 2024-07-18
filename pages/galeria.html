@@ -3,61 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/stylegaleria.css">
-    <title>Galeria</title>
+    <link rel="stylesheet" href="../css/layout/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<meta name="description" content="pagina que contiene galeria de imagenes referidas a Iron Maiden">
+	<meta name="keywords" content="Imagenes recilar Iron Maiden, Eddie, Videos Iron Maiden, Videos Recitales Iron Maiden">
+	<link rel="shortcut icon" href="../assets/img/Iron_Maiden-logo-57E237D49F-seeklogo.com.png"  alt="icono Iron Maiden">
+    <title>Iron Maiden - Galeria</title>
 </head>
 <body>
-    <header id="caja_header">
+    <header>
         <img id="imagen_logo"src="../assets/img/Iron_Maiden_Logo.png" alt="Iron Maiden">
     </header>
-    <nav id="caja_nav">
-        <ol id="barra_nav">
-            <li class="item_nav item5"><img class="icono_nav" src="../assets/img/home.png"><a href="../index.html">Home</a></li>		
-            <li class="item_nav item4"><img class="icono_nav" src="../assets/img/galeria.png"><a href="../pages/galeria.html">Galeria</a></li>	    
-            <li class="item_nav item3"><img class="icono_nav" src="../assets/img/tour.png"><a href="../pages/tour.html">Tour</a></li>		
-            <li class="item_nav item2"><img class="icono_nav" src="../assets/img/discografia.png"><a href="../pages/discografia.html">Discografia</a></li>		
-            <li class="item_nav item1"><img class="icono_nav" src="../assets/img/contacto.png"><a href="../pages/contacto.html">Contacto</a></li>
-        </ol>
-    </nav>
-    <main>
-        <section id="grilla_galeria">
-            <article class="texto_cabeza">
-            <h2 class="titulo_pagina">Galeria</h2>
-            </article>
-            <article  class="img1">
-                <img src="../assets/img/1.jpg" class="img0">
-            </article>
-            <article  class="img2">
-                <img src="../assets/img/2.jpg"  class="img0">
-            </article>
-            <article class="img3">
-                <img src="../assets/img/3.jpg"  class="img0">
-            </article>
-            <article  class="img4">
-                <img src="../assets/img/4.jpg"  class="img0">
-            </article>
-            <article class="img5">
-                <img src="../assets/img/5.jpg" class="img0">
-            </article>
-            <article class="video1">
-                <iframe class="video" src="https://www.youtube.com/embed/6PDMtqejNfs?si=0wh-CuvUHiSiX4Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article class="video2">
-                <iframe class="video" src="https://www.youtube.com/embed/XRHhDP8PY_g?si=snZk7gXsqP6JEWPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-        </section>
-    </main>
-    <footer id="caja_pie">
-        <article class="imagen_pie">
-            <img class="redes" src="../assets/img/facebook.png">
-            <img class="redes" src="../assets/img/instagram.png">
-            <img class="redes" src="../assets/img/whatsapp.png">
-        </article>
-        <article class="copy_pie">
-            <p class="piepag">Página sin fines de lucro ni comerciales</p>
-            <p class="piepag">Copyright ©Hendel Brian</p>
-        </article>
-    </footer>
+        <nav>
+            <ol id="barra_nav">
+				<li class="item_nav item5"><img class="icono_nav" src="../assets/img/home.png"><a href="../index.html">Home</a></li>		
+                <li class="item_nav item4"><img class="icono_nav" src="../assets/img/galeria.png"><a href="../pages/galeria.html">Galeria</a></li>	    
+				<li class="item_nav item3"><img class="icono_nav" src="../assets/img/tour.png"><a href="../pages/tour.html">Tour</a></li>		
+		        <li class="item_nav item2"><img class="icono_nav" src="../assets/img/discografia.png"><a href="../pages/discografia.html">Discografia</a></li>		
+				<li class="item_nav item1"><img class="icono_nav" src="../assets/img/contacto.png"><a href="../pages/contacto.html">Contacto</a></li>
+            </ol>
+        </nav>
+		<main>
+			<section id="grilla_galeria">
+				<article class="texto_cabeza">
+				<h1 class="titulo_pagina">Galeria</h1>
+				</article>
+				<article  class="img1">
+					<img src="../assets/img/1.jpg" class="img0" data-aos="fade-up" alt="imagen iron maiden en recitales">
+				</article>
+				<article  class="img2">
+					<img src="../assets/img/2.jpg"  class="img0" data-aos="fade-up" alt="imagen iron maiden en recitales">
+				</article>
+				<article class="img3">
+					<img src="../assets/img/3.jpg"  class="img0" data-aos="fade-up" alt="imagen iron maiden en recitales">
+				</article>
+				<article  class="img4">
+					<img src="../assets/img/4.jpg"  class="img0" data-aos="fade-up" alt="imagen iron maiden en recitales">
+				</article>
+				<article class="img5">
+					<img src="../assets/img/5.jpg" class="img0" data-aos="fade-up" alt="imagen iron maiden eddie">
+				</article>
+				<article class="video1">
+					<iframe alt="video recital iron maiden" data-aos="fade-up" class="video" src="https://www.youtube.com/embed/6PDMtqejNfs?si=0wh-CuvUHiSiX4Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</article>
+				<article class="video2">
+					<iframe  alt="video recital iron maiden" data-aos="fade-up" class="video" src="https://www.youtube.com/embed/XRHhDP8PY_g?si=snZk7gXsqP6JEWPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<article class="imagen_pie">
+				<img class="redes" src="../assets/img/facebook.png" alt="logo de facebool">
+				<img class="redes" src="../assets/img/instagram.png" alt="logo de instagram">
+				<img class="redes" src="../assets/img/whatsapp.png" alt="logo de whatsapp">
+			</article>
+			<article class="copy_pie">
+				<p class="piepag">Página sin fines de lucro ni comerciales</p>
+				<p class="piepag">Copyright ©Hendel Brian</p>
+			</article>
+		</footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
 </body>
 </html>
